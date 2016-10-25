@@ -1,0 +1,15 @@
+启动gdb：
+
+gdb [executable file] [core file]
+进入gdb命令行后，会直接打印出导致crash的相关信息，也可执行如下命令详细查看。
+
+gdb命令行：
+
+bt: 打印程序崩溃时的堆栈信息，包括导致crash的对应的frame number，文件名和行数
+frame [frame number]: 打印出该行代码
+info locals: 打印局部变量信息
+print [local variable]: 打印某个局部变量
+list: 打印相关代码
+quit: 退出gdb命令行
+pgrep xxx  获取当前服务所有的进程号
+ 
